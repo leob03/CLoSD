@@ -66,6 +66,8 @@ The code will automatically download cached versions of the following datasets a
   <summary><b>Multi-task</b></summary>
 
 ```
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+
 python closd/run.py\
   learning=im_big robot=smpl_humanoid\
   epoch=-1 test=True no_virtual_display=True\
